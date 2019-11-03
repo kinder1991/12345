@@ -4,7 +4,29 @@
 	<title></title>
 </head>
 <body>
-<iframe src="work02.html" width="50%" name="iframe"></iframe>
-<div><a href="http://www.w3schools.com/" target="iframe">newe link</a></div>
+	<fieldset>
+		<legend>форма обратной связи</legend>
+		<form method="get">
+			<p>имя</p>
+			<input type="text" name="name" value="" maxlength="10">
+			<p>фамилия</p>
+			<input type="text" name="surname" value="" maxlength="20">
+			<p></p>
+			<select>
+				<option disabled selected>выбирете пол</option>
+				<option>женский</option>
+				<option>мужской</option>
+			</select>
+			<p>как вы о нас узнали?</p>
+			<input type="radio" name="advertising" value="1"/>реклама
+			<input type="radio" name="friends" value="2"/>друзья
+			<input type="radio" name="self" value="3"/>сам узнал
+			<p>коментарий</p>
+			<textarea name="comments" rows="5" cols="50"></textarea>
+			<div style="margin-top:20px"><input type="submit" name="submit">
+				<input type="reset" name="reset">
+			</div>
+		</form>
+	</fieldset>
 </body>
 </html>
